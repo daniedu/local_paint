@@ -1,0 +1,15 @@
+{
+  "name": "drawing-app",
+  "private": true,
+  "scripts": {
+    "build": "bun build app.ts --outdir=. --target=browser",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:all": "vitest run && playwright test"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0",
+    "@playwright/test": "^1.52.0"
+  }
+}
